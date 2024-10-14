@@ -1,0 +1,7 @@
+/* Estilo para los enlaces */
+nav a {
+    color: #060606;
+    text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+    padding: 14px 20px;
+    margin: 0 55px;
+}
