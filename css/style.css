@@ -1,7 +1,178 @@
-/* Estilo para los enlaces */
-nav a {
-    color: #060606;
-    text-decoration: none; /* Elimina el subrayado de todos los enlaces */
-    padding: 14px 20px;
-    margin: 0 55px;
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Azul celeste claro, similar al de la bandera */
+    color: #333;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    background-color: #96c1ec; /* Azul oscuro profundo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    background-color: #1f75fe; /* Azul celeste fuerte */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-navegacion a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.menu-navegacion a:hover {
+    background-color: #7cb0e4; /* Efecto hover con azul oscuro */
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --- SECCIÓN DE PERFIL (IMAGEN) --- */
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.estilo-foto-perfil {
+    width: 220px;
+    height: auto;
+    border-radius: %;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* --- SECCIÓN DE CONTENIDO PRINCIPAL (TEXTO) --- */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fefeff; /* Fondo blanco puro */
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #60aaf3; /* Azul oscuro */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.texto {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- BOTONES (OPCIONAL) --- */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #1f75fe; /* Azul celeste */
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003366; /* Azul oscuro al hacer hover */
+    transform: translateY(-3px);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVE DESIGN) --- */
+@media (max-width: 768px) {
+    .menu-navegacion {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-navegacion a {
+        width: 80%;
+        padding: 12px;
+    }
+
+    .estilo-foto-perfil {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .texto {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+/*seleccion argentina*/
+.slabo-27px-regular {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .header .wrapper-menu ul {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
 }
